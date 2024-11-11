@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Infraestrutura de TI</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navbar com menu hamburguer -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Empresa TI</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./empresa.html">Empresa</a></li>
+                <li><a href="./servico.html">Serviço</a></li>
+                <li><a href="./noticias.html">Notícias</a></li>
+                <li><a href="#contato">contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seções do conteúdo -->
+    <section id="home" class="content">
+        <h1>Bem-vindo à Empresa de Infraestrutura de TI</h1>
+        <p>Oferecemos soluções de tecnologia para o seu negócio!</p>
+    </section>
+
+
+  
+
+    <section id="contato" class="content">
+        <h2>Contato</h2>
+        <form action="mailto:suaempresa@email.com" method="POST" enctype="text/plain">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé com redes sociais -->
+    <footer>
+        <p>Siga-nos:</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
