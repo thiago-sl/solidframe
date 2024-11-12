@@ -408,3 +408,46 @@ footer {
 #empresa h2{
     padding: 3rem;
 }
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #28a745, #05f121, #00d2ff, #8e2de2, #4a00e0);
+    background-size: 200%;
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    animation: gradient-animation 8s infinite linear;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+/* Animação de Zoom e Pulso */
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff6a00;
+    animation: zoom-pulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes zoom-pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg,  #28a745, #05f121, #00d2ff, #8e2de2, #4a00e0);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 5s infinite linear, zoom-pulse 1.5s ease-in-out infinite alternate;
+}
