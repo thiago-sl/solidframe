@@ -489,3 +489,48 @@ footer {
         gap: 1rem;
     }
 }
+/* Seção de Apresentação */
+.apresentacao {
+    position: relative;
+    background-image: url('../img/LOGO.jpg'); /* Adicione o caminho da sua imagem aqui */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.apresentacao-texto h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.apresentacao-texto p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seta para baixo */
+.scroll-down {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
