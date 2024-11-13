@@ -25,7 +25,7 @@ body {
     align-items: center;
     padding: 1rem;
     position: relative;
-    background-image: url('caminho/para/sua-imagem.jpg'); /* Caminho para a imagem */
+    background-image: url('../img/degrade.jpg'); /* Caminho para a imagem */
     background-size: cover; /* Ajusta a imagem para cobrir toda a área da navbar */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
@@ -187,12 +187,10 @@ body {
     background-color: #fff;
     transition: width 0.3s ease, left 0.3s ease;
 }
-
 .nav-links li:not(:last-child):not(.contact-btn) a::before {
     top: 0;
     width: 0;
 }
-
 .nav-links li:not(:last-child):not(.contact-btn) a::after {
     bottom: 0;
     width: 0;
@@ -292,7 +290,7 @@ body {
 #backToTop {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right:20px;
     padding: 10px 15px;
     font-size: 18px;
     background-color: #28a745;
@@ -355,17 +353,25 @@ form input, form textarea, form button {
 }
 
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
+
+    background-image: url('../img/degrade.jpg'); /* Caminho para a imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área da navbar */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+
 }
 
 .social-links a {
     color: #fff;
     margin: 0 0.5rem;
     text-decoration: none;
+    
 }
+
 
 /* Responsivo */
 @media (max-width: 1024px) {
@@ -517,7 +523,7 @@ footer {
 }
 
 /* Seta para baixo */
-.scroll-down {
+.scroll-down-seta {
     position: absolute;
     bottom: 2rem;
     font-size: 2rem;
