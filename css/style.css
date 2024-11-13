@@ -488,6 +488,24 @@ footer {
     border-radius: 10px; /* Bordas arredondadas para aparência mais suave */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/LOGO.jpg') center/cover no-repeat;
 }
+
+/* Responsividade para telas médias */
+@media (max-width: 768px) {
+    .contato {
+        padding: 3rem 1.5rem; /* Reduz o padding */
+        max-width: 90%; /* Aumenta a largura máxima relativa */
+        background-size: cover; /* Mantém a imagem de fundo cobrindo a área */
+    }
+}
+
+/* Responsividade para telas pequenas (mobile) */
+@media (max-width: 480px) {
+    .contato {
+        padding: 2rem 1rem; /* Reduz ainda mais o padding */
+        max-width: 100%; /* Permite que a seção ocupe toda a largura */
+        font-size: 0.9rem; /* Ajusta o tamanho do texto para dispositivos menores */
+    }
+}
 /* Ajustes responsivos */
 @media (max-width: 600px) {
     .navbar ul {
